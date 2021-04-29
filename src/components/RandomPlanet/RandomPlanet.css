@@ -1,0 +1,23 @@
+.planet {
+  display: flex;
+  padding: 1rem;
+}
+
+.planet__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.descr__list {
+  margin: 1rem 0 0 1rem;
+}
+
+.descr__item {
+  padding: 0.25rem;
+}
+
+.descr__term {
+  margin-right: 0.5rem;
+}
