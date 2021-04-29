@@ -15,6 +15,7 @@ export default class RandomPlanet extends Component {
         }
         this.swapiService = new SwapiServices();
         this.updatePlannet()
+        this.plannetTimer = setInterval(()=>this.updatePlannet(), 5000)
     }
 
     updatePlannet() {
