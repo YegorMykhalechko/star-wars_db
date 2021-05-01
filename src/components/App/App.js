@@ -35,7 +35,8 @@ export default class App extends Component {
                 <div className="row mx-2">
                     <div className="col-md-6">
                         <ItemList onItemSelected={this.onPersonSelected}
-                        getData={this.swapiServices.getAllPlanets} />
+                        getData={this.swapiServices.getAllPlanets}
+                        renderItem={(item)=>`${item.name} (${item.diameter})`} />
                     </div>
                     <div className="col-md-6">
                         <PersonDetails personId={this.state.selectedPerson} />
@@ -44,7 +45,8 @@ export default class App extends Component {
                 <div className="row mx-2">
                     <div className="col-md-6">
                         <ItemList onItemSelected={this.onPersonSelected}
-                        getData={this.swapiServices.getAllStarships} />
+                        getData={this.swapiServices.getAllStarships}
+                        renderItem={(item)=>`${item.name} (${item.model})`} />
                     </div>
                     <div className="col-md-6">
                         <PersonDetails personId={this.state.selectedPerson} />
