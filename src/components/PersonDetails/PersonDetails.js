@@ -24,7 +24,7 @@ export default class PersonDetails extends Component {
         }
     }
 
-    onPlanetLoaded = (person) => {
+    onPersonDetailLoaded = (person) => {
         this.setState({
             person,
             loading: false,
@@ -38,13 +38,13 @@ export default class PersonDetails extends Component {
         }
         this.swapiService
             .getPerson(personId)
-            .then(this.onPlanetLoaded)
+            .then(this.onPersonDetailLoaded)
     }
 
     render() {
         const { person, loading } = this.state
         if (!this.state.person) {
-            return <span>OOps</span>
+            return <Loader />
         }
         const hasData = !(loading);
         const loader = loading ? <Loader /> : null

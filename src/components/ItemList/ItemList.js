@@ -22,14 +22,6 @@ export default class ItemList extends Component {
                     peopleList
                 })
             })
-            .catch(this.onError)
-    }
-
-    onError = (err) => {
-        this.setState({
-            error: true,
-            loading: false
-        })
     }
 
     renderItem(arr) {
