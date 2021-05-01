@@ -7,19 +7,17 @@ import Error from '../Error'
 import './ItemList.css'
 
 export default class ItemList extends Component {
-
-    swapiService = new SwapiServices()
-
     state = {
-        peopleList: null,
+        itemList: null,
     }
 
     componentDidMount() {
-        this.swapiService
-            .getAllPersons()
-            .then((peopleList) => {
+        const { getData } = this.props
+
+        getData()
+            .then((itemList) => {
                 this.setState({
-                    peopleList
+                    itemList
                 })
             })
     }
@@ -37,11 +35,11 @@ export default class ItemList extends Component {
     }
 
     render() {
-        const { peopleList } = this.state
-        if (!peopleList) {
+        const { itemList } = this.state
+        if (!itemList) {
             return <Loader />
         }
-        const items = this.renderItem(peopleList)
+        const items = this.renderItem(itemList)
         return (
             <ul className="item__list list-group" >
                 {items}
