@@ -67,7 +67,8 @@ const PlanetView = ({ planet }) => {
     return (
         <React.Fragment>
             <img className="planet__image"
-                src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`} />
+                src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`}
+                alt={`random planet ${id}`} />
             <div className="planet__descr">
                 <h4 className="descr__title">{name}</h4>
                 <ul className="descr__list list-group list-group-flush">
