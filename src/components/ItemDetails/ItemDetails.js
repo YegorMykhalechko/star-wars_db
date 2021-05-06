@@ -8,7 +8,7 @@ import './ItemDetails.css'
 const Record = ({ item, field, label }) => {
     return (
         <li className="person__item list-group-item">
-            <span className="person__term">{label}</span>
+            <span className="person__term">{label}:</span>
             <span className="person__descr">{item[field]}</span>
         </li>
     )

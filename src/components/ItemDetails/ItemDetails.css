@@ -17,3 +17,7 @@
 .person__term {
   margin-right: 0.5rem;
 }
+
+.person__descr {
+  color: #00bc8c;
+}

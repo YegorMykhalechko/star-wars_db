@@ -15,6 +15,9 @@ const StarshipDetails = ({ itemId }) => {
                             <Record field='model' label='Model' />
                             <Record field='length' label='Length' />
                             <Record field='costInCredits' label='Cost' />
+                            <Record field='manufacturer' label='Manufacturer' />
+                            <Record field='crew' label='Crew' />
+                            <Record field='cargoCapacity' label='Cargo Capacity' />
                         </ItemDetails>
                     )
                 }

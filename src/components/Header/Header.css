@@ -20,26 +20,9 @@ a:hover {
 
 .header__link {
   color: white;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline;
-  margin: 0;
-  padding: 0;
 }
 
 .header__link:hover {
   color: #00bc8c;
 }
 
-.link-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline;
-  margin: 0;
-  padding: 0;
-  color: #00bc8c;
-}
