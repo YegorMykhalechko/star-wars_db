@@ -46,10 +46,10 @@ export default class App extends Component {
                         <Switch>
                             <Route path='/' render={() =>
                                 <h2>Welcome</h2>
-                            } exact />
+                            } exact = {true}/>
                             <Route path='/person/:id?' component={PersonPage} />
                             <Route path='/planet' component={PlanetPage} />
-                            <Route path='/starship' component={StarshipPage} exact />
+                            <Route path='/starship' component={StarshipPage} exact = {true}/>
                             <Route path='/starship/:id' render={({ match }) => {
                                 const { id } = match.params
                                 return <StarshipDetails itemId={id} />
